@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>信息录入</title>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="package/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script type="text/javascript" src="package/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="package/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/addPersons.js"></script>
+</head>
+<body>
+	<div class="container" style="margin-top:50px;">
+		<form class="form-horizontal" role="form" method="POST" action="deal.php">
+
+		  <div class="form-group">
+		    <label for="firstname" class="col-sm-2 control-label">姓名</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" value="" id="name" name="name" placeholder="请输入姓名">
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="class" class="col-sm-2 control-label">班级</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="class" name="class" placeholder="17软6">
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="phone" class="col-sm-2 control-label">联系方式</label>
+		    <div class="col-sm-10">
+		      <input type="text" name="phone" class="form-control" id="phone" placeholder="13400000000">
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="email" class="col-sm-2 control-label">qq邮箱</label>
+		    <div class="col-sm-10">
+		      <input type="text" name="email" class="form-control" id="email" placeholder="2571082938@qq.com">
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="word" class="col-sm-2 control-label">人生格言</label>
+		    <div class="col-sm-10">
+		      <input type="text" name="word" class="form-control" id="word" placeholder="人生格言">
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="lover" class="col-sm-2 control-label">女神/男神</label>
+		    <div class="col-sm-10">
+		      <select class="form-control" id="lover" name = "lover">
+                    <option>赵丽颖</option>
+                    <option>佟丽娅</option>
+                    <option>胡歌</option>
+                    <option>邓超</option>
+                </select>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		        <div class="col-sm-offset-2 col-sm-10">
+			      	<label class="radio-inline">
+		            	<input type="radio" name="sex" checked value="男性"> 男性
+			        </label>
+
+			        <label class="radio-inline">
+			            <input type="radio"  name="sex" value="女性"> 女性
+			        </label>
+
+			        <label class="radio-inline">
+			            <input type="radio" name="sex" value="中性">中性
+			        </label>
+			    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="submit" id="submit" name="submit" class="form-control btn-info">登录</button>
+		    </div>
+		  </div>
+
+		</form>
+	</div>
+</body>
+</html>
